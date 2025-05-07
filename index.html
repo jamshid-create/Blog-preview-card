@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog preview card</title>
+
+  <style>
+    :root {
+      --Yellow: hsl(47, 88%, 63%);
+      --White: hsl(0, 0%, 100%);
+      --Gray-500: hsl(0, 0%, 42%);
+      --Gray-950: hsl(0, 0%, 7%);
+    }
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--Yellow);
+      font-size: 16px;
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .card {
+      display:inline-block;
+      background-color: var(--White);
+      width: 350px;
+      border-radius: 20px;
+      box-shadow: 10px 10px rgba(0, 0, 0, 1);
+      margin: 0 12px;
+    }
+
+    .test-images {
+      width: 90%;
+      margin: 15px;
+      border-radius: 15px;
+    }
+
+    .button {
+      background-color: var(--Yellow);
+      color: var(--Gray-950);
+      margin: 5px 0px 15px 15px;
+      width: 80px;
+      height: 30px;
+      border-radius: 5px;
+      font-weight: 20px;
+      font-size: 15px;
+      border: none;
+    }
+
+    .paragraph {
+      color: var(--Gray-950);
+      margin: 5px 15px 15px 15px;
+    }
+
+    .contaner{
+      display: flex;
+    }
+
+    .profile-picture {
+      margin: 15px 20px 15px 15px;
+    }
+
+    .name {
+      margin: 40px 15px 15px 0px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="test-images" src="images/illustration-article.svg" alt="test images">
+
+    <button class="button">Learning</button>
+
+    <p class="paragraph">Published 15 Feb 2025</p>
+
+    <h2 class="paragraph">HTML & CSS foundations</h2>
+
+    <p class="paragraph">These languages are the backbone of every
+      website, defining structure, content, and
+      presentation.
+    </p>
+
+    <div class="contaner">
+      <img class="profile-picture" src="./images/image-avatar.webp" alt="profile-picture">
+      <p class="name">Gorg Hooper</p>
+    </div>
+  </div>
+    
+</body>
+</html>
